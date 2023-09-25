@@ -10,7 +10,7 @@ on:
 permissions: {}
 
 jobs:
-  release:
+  release: 
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
