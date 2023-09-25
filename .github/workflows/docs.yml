@@ -3,7 +3,7 @@ name: Docs
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - site/content/**
 
@@ -25,6 +25,6 @@ jobs:
         uses: 'sveltejs/action-deploy-docs/dispatch@main'
         with:
           repo: 'svelte'
-          branch: 'master'
+          branch: 'main'
           docs_path: 'site/content'
           token: ${{ steps.github-app.outputs.token }}
